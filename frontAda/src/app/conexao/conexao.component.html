@@ -1,0 +1,124 @@
+<!-- NAVEGADOR -->
+<nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between back sticky-top">
+  <a class="navbar-brand" routerLink='/principal'>
+      <img src="../../assets/img/logo-cortado-roxo.jpg" style="height: 35pt;" alt="logo-ada-roxo">
+  </a>
+      <div id="divBusca" style="width: 300px;">
+          <form class="form-inline my-md-0">
+              <input id="pesquisa" class="form-control mr-sm-2" id="txtBusca" style="width: 200pt; height: 35px;" type="text"
+                  placeholder="  pesquisar..." aria-label="Search">
+              <a class="lupa-busca">
+                  <img src="../../assets/img/img-search.png" id="btnBusca" style="height: 20px;" alt="">
+              </a>
+          </form>
+      </div>
+
+  <li class="nav-item dropdown mr-1">
+      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+
+          <img src="../../assets/img/img-dropdown.png" style="height: 20px;" alt="dropdown-opções">
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink='/principal'><img src="../../assets/img/logo-home.svg" class="mr-2 pl-2" alt="Logo sair do site" width="30rem">Página inicial</a>
+          <a class="dropdown-item" href="#"><img src="../../assets/img/logo-sair.svg" class="mr-2 pl-1" alt="Logo sair do site" width="30rem">Sair</a>
+      </div>
+  </li>
+</nav>
+<!-- FIM NAVEGADOR -->
+
+<!-- MEU PERFIL -->
+<div class="container mt-3">
+  <div class="row d-flex justify-content-center">
+    <!-- COLUNA MENU & POSTAGENS -->
+    <div class="col-md-11">
+      <div class="card perfil-fundo d-flex ml-3 mt-5">
+        <div class="fundo-cima mb-3">
+          <div class="card-header mt-4">
+            <div id="card-perfil" class="row d-flex flex-row">
+              <img
+                src="{{ user.foto }}"
+                alt="Foto de perfil"
+                class="img-fluid rounded-circle bs ml-4 foto-perfil mb-4"
+              />
+
+              <div class="d-flex flex-column ml-4 my-auto fontNomeCargo">
+                <h1 class="mb-0 font-weight-bold">{{user.nomeCompleto}}</h1>
+                <h4 class="mt-0">{{user.cargo}}</h4>
+
+                <p class="fp">
+                  <span class="pr-5">{{contaConexao}} conexões</span>
+
+                  <a
+                    class="pr-5 text-white"
+                    href="{{ user.link }}"
+                    target="_blank"
+                    >Link do Github</a
+                  >
+
+                  <span id="data">Ingressou em Março de 2021</span> <br />
+                  {{contaPostagem}} postagens
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- FIM CARD HEADER -->
+        </div>
+
+        <div class="card-body fundo-baixo">
+          <div class="text-center">
+            <h2 class="mont font-weight-bold">
+              Pubicações {{ user.nomeCompleto }}
+            </h2>
+          </div>
+          <div id="postagem" *ngFor="let item of listaPostagem">
+            <div class="card-back d-flex flex-column ml-5 mr-5 mt-5">
+              <div class="row d-flex">
+                <img
+                  src="{{ user.foto }}"
+                  alt="Foto do usuário da postagem"
+                  width="90px"
+                  height="90px"
+                  class="rounded-circle bs ml-4 mt-3"
+                />
+
+                <div class="d-flex flex-column ml-1 pl-3 mt-4">
+                  <h5 class="mb-0">{{ user.nomeCompleto }}</h5>
+                  <p class="mb-0">{{ user.cargo }}</p>
+                  <p class="mt-0">
+                    {{ item.dataHora | date: "dd/MM/yyyy" }} às
+                    {{ item.dataHora | date: "HH:mm" }}<small></small>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-body mt-3 pt-2">
+                <h5>{{ item.tema.descricaoTema }}</h5>
+
+                <p>{{ item.descricaoPostagem }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer" class="row text-center mt-5">
+  <div class="col-md-12">
+    <a href="#" class="mr-5 font-foot"
+      >Política de privacidade do rede social ADA</a
+    >
+    <a href="#" class="mr-5 font-foot">Sobre</a>
+    <a href="#" class="mr-5 font-foot">Política de direitos autorais</a>
+    <a href="#" class="font-foot">Direitos de marca</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p class="text-white bg-roxo footer text-center m-0 pt-3">
+      ADA 2021 &copy;
+    </p>
+  </div>
+</div>

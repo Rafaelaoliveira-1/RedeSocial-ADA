@@ -1,0 +1,124 @@
+.back {
+  background-color: #89458f;
+}
+
+#divBusca {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  margin-right: 70px;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+}
+
+#btnBusca {
+  display: flex;
+  align-items: flex-end;
+}
+.dropdown-item{
+  padding-left: 0;
+}
+#divBusca input{
+  font-size: 0.9rem;
+}
+
+li {
+  list-style: none;
+}
+
+.txt {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.perfil-fundo {
+  background-color: #89458f;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.perfil-texto {
+  background-color: #cd9ccc;
+  font-size: 15px;
+  border-radius: 2rem;
+  border-radius: 0rem 0rem 2rem 2rem;
+  line-height: 13px;
+  /* Vini hint*/
+}
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+}
+.bs {
+  box-shadow: #000000 2px 2px 5px;
+}
+
+button {
+  background: #89458f;
+  font-size: 12pt;
+  border-radius: 10px;
+  width: 100pt;
+  box-shadow: #a7a5a1 3px 3px 5px;
+  color: white;
+  font-weight: 500;
+}
+
+#botaoCancelar {
+  background: #ffb81c;
+  color: #000000;
+}
+
+#botaoEnter {
+  color: white;
+}
+
+button:hover {
+  background: #75277c;
+  color: white;
+}
+
+#botaoCancelar:hover {
+  background: #e79e00f6;
+  color: black;
+}
+
+input,
+select {
+  border-radius: 10px;
+  background: #e5e5e5;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
+}
+
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+#footer a {
+  font-family: "Montserrat", sans-serif;
+  color: #89458f;
+  font-weight: bold;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: #3a0d3d;
+}
+
+.footer {
+  background-color: #89458f;
+  height: 55px;
+}

@@ -1,0 +1,382 @@
+<nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between back sticky-top">
+    <a class="navbar-brand" routerLink='/principal'>
+        <img src="../../assets/img/logo-cortado-roxo.jpg" style="height: 35pt;" alt="logo-ada-roxo">
+    </a>
+
+
+        <div id="divBusca" style="width: 300px;">
+            <form class="form-inline my-md-0">
+                <input id="pesquisa" [(ngModel)]='busca'  [ngModelOptions]="{standalone: true}" class="form-control mr-sm-2" id="txtBusca" style="width: 200pt; height: 35px;" type="text"
+                    placeholder="  pesquisar..." aria-label="Search">
+                <a class="lupa-busca">
+                    <img (click)='findByDescricaoPostagem()' src="../../assets/img/img-search.png" id="btnBusca" style="height: 20px;" alt="">
+                </a>
+            </form>
+        </div>
+
+    <li class="nav-item dropdown mr-1">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+
+            <img src="../../assets/img/img-dropdown.png" style="height: 20px;" alt="dropdown-opções">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['/edit-usuario',id]"><img src="../../assets/img/logo-settings.svg" class="pl-2 mr-2" alt="Logo de configuração do perfil" width="30rem"> Editar Perfil</a>
+            <a class="dropdown-item" href="#"><img src="../../assets/img/logo-sair.svg" class="mr-2 pl-1" alt="Logo sair do site" width="30rem"> Sair</a>
+        </div>
+    </li>
+</nav>
+
+<div id="content" class="container-fluid">
+    <!-- Cards-->
+    <div id="cards" class="container">
+        <div id="container" class="row">
+            <div class="col-lg-3">
+                <section id="noticias" class="sticky">
+                    <h4 class="text-center mont">Notícias</h4>
+                    
+               <!-- <div *ngFor='let item of listaNoticia'>
+                        <div class="card mt-4 card-back" style="width: 15rem;">
+                            <div class="card-body">
+                                <a class="text-dark" target="_blank"
+                                    href={{item.url}}>
+                                    <p class="card-title pt-3 text-center">{{item.title}}</p>
+                                </a>
+                                <p class="card-text m-0 p-0" id="txt-noticia">{{item.description}}
+                                </p>
+                                <a href={{item.url}}
+                                    class="card-link" target="_blank">continuar...</a>
+                            </div>
+                        </div>
+                    </div>  -->
+                        <div class="card mt-4 card-back">
+                            <div class="card-body">
+                                <a class="text-dark text-center" target="_blank"
+                                    href="https://www.linkedin.com/news/story/h%C3%A1-vagas-confira-oportunidades-no-setor-de-internet-4946828/?originalSubdomain=br%22%3E">
+                                    <h5 class="card-title">Há vagas: confira oportunidades no setor de internet</h5>
+                                </a>
+                                <p class="card-text txt-noticia m-0 p-0">Ainda há oportunidades de trabalho em meio à pandemia. Confira as
+                                    empresas com
+                                    mais vagas abertas no LinkedIn no segmento de internet:
+                                </p>
+                                <a href="https://www.linkedin.com/news/story/h%C3%A1-vagas-confira-oportunidades-no-setor-de-internet-4946828/?originalSubdomain=br"
+                                    class="card-link" target="_blank">continuar...</a>
+                            </div>
+                        </div>
+    
+                        <div class="card mt-4 card-back">
+                            <div class="card-body">
+                                <a class="text-dark text-center font-noticias" target="_blank"
+                                    href="https://www.linkedin.com/news/story/hackers-miram-setor-de-sa%C3%BAde-na-pandemia-5019004/">
+                                    <h5 class="card-title">Hackers miram setor de saúde na pandemia</h5>
+                                </a>
+                                <p class="card-text txt-noticia m-0 p-0">Segundo levantamento feito pela empresa de tecnologia IBM, os ataques
+                                    hackers
+                                    ao setor de tecnologia mais do que dobraram em 2020 em relação ao ano de 2019. Um desses ataques
+                                    chegou a paralisar um hospital na Alemanha.
+                                </p>
+                                <a href="https://www.linkedin.com/news/story/hackers-miram-setor-de-sa%C3%BAde-na-pandemia-5019004/"
+                                    class="card-link" target="_blank">continuar...</a>
+                            </div>
+                        </div>
+    
+                        <div class="card mt-4 card-back" >
+                            <div class="card-body">
+                                <a class="text-dark text-center" target="_blank"
+                                    href="https://www.linkedin.com/news/story/confian%C3%A7a-do-com%C3%A9rcio-tem-leve-alta-em-fevereiro-5016908/">
+                                    <h5 class="card-title">Confiança do comércio tem leve alta em fevereiro</h5>
+                                </a>
+                                <p class="card-text m-0 p-0">O Índice de Confiança do Comércio (ICOM), medido pela Fundação Getulio
+                                    Vargas
+                                    (FGV), cresceu 0,2 ponto em fevereiro, passando de 90,8 para 91,0 pontos. O avanço foi
+                                    impulsionado pelo aumento do Índice de Expectativas (IE-COM), que avançou 3,8 pontos e atingiu
+                                    um total de 95,9 pontos.
+                                </p>
+                                <a href="https://www.linkedin.com/news/story/confian%C3%A7a-do-com%C3%A9rcio-tem-leve-alta-em-fevereiro-5016908/"
+                                    class="card-link" target="_blank">continuar...</a>
+                            </div>
+                        </div>
+        
+                        <div class="pt-2">
+                            <a class="text-dark" href="">
+                                <p class="text-center mont">Veja Mais...</p>
+                            </a>
+                        </div>
+    
+                </section>
+            </div>
+    
+            <!-- INICIO -->
+            <div id="publicacoes" class="col-lg-6 col-md-8">
+                <div class="card-back card" style=" height: 18.5rem;">
+                    <h5 class="txt pl-4 pt-1 mb-0">Criar Publicação</h5>
+                    <hr class="mt-2">
+                    <div class="card-body">
+                        <!--
+                            <input class="form-control mr-sm-2" style="width: 450pt; height: 150px;" type="text"
+                            placeholder="No que você está pensando?" aria-label="Search">
+                        -->
+                        <div class="tema-postagem txt">
+                            Tema: {{tema.descricaoTema}}
+                        </div>            
+
+                        <textarea class="txtarea form-control mr-sm-2" name="text" id="text" cols="30" rows="6"
+                            placeholder="No que você está pensando?" [(ngModel)]='postagem.descricaoPostagem'></textarea>
+    
+    
+    
+                        <div class="row d-flex justify-content-end mt-2">
+                            <button class="btn botaoTema mr-4" id="btnEscolherTema" data-toggle="modal" data-target="#Temas">Escolher
+
+    
+                                Tema</button>
+                            <button class="btn botaoPostar mr-4" (click)='postar()'>Postar</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- PUBLICAÇÕES ============================================================================== -->
+                
+
+                    <!-- <div *ngFor = 'let tema of listaTema '> -->
+                        <div *ngFor='let item of listaPostagem  | orderBy: key : reverse'>
+                            <div class="card-back card mt-5 mb-5 ">
+                                
+                                <div class="row d-flex flex-row">
+                
+                                    <img src="{{item.usuario.foto}}" alt="Foto do usuário da postagem"   class="img-fluid rounded-circle bs ml-4 mt-3 foto-publi">
+                
+                                    <div class="d-flex flex-column ml-4 mt-4">
+                
+                                        <h5 class="mb-0">{{item.usuario.nomeCompleto}}</h5> 
+                                        <p class="mt-0 mb-0">{{item.usuario.cargo}}</p>
+                                        <p class="mt-0"><small>{{item.dataHora | date: 'dd/MM/yyyy'}} às {{item.dataHora | date: 'HH:mm'}}</small></p>
+                
+                                    </div>
+                
+                                    <div class="ml-auto mt-3 mr-5" *ngIf= 'item.usuario.id == idUser'>
+                
+                                        <button id='{{item.postagem_id}}' [routerLink]="['/edit-postagem',item.postagem_id]" class="btn botaoPostar">Editar</button>
+                
+                                    </div>  
+                
+                                </div>
+                                
+                                <hr class="mb-2">
+                
+                                    <div class="card-body mt-0 pt-0">
+                                        
+                                        <h5>{{item.tema.descricaoTema}}</h5>
+                
+                                        <p>{{item.descricaoPostagem}}</p>
+                    
+                                    </div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                 
+            <!-- Fim da div da col-md-6  -->  
+            </div>
+            <!-- FIM -->    
+            <div class="col-lg-3 col-md-3 bg-white ">
+    <!-- PERFIL ========================================================================================== -->
+            <!-- Parte de cima do card com o tamanho para caber com a parte de baixo, e define as bordas de cima-->
+            <section id="perfil" class="sticky">
+                <div class="card perfil-fundo sh" style="width: 270px; height: 190px;">
+                    <!-- Parque que centraliza a foto -->
+                    <div class="card-body text-center">
+                        <!-- Parte da imagem com a medida definida e arredondamento da imagem -->
+                        <img src="{{foto}}" alt="Foto perfil - {{nomeCompleto}}"  class="img-fluid rounded-circle bs foto-perfil mt-3">
+                     
+                    </div>
+        
+                </div>
+                <!-- Parte de baixo do card com tamanho para caber com a parte de cima-->
+                <div class="card perfil-texto bg-roxo sh" style="width: 270px;">
+                    <!-- Parter que centraliza os textos do card -->
+                    <div class="card-body text-center">
+                        <!-- Parte de baixo do card com tamanho para caber com a parte de cima, e define as bordas de baixo -->
+                        <div class="perfil-texto">
+                            
+                            <div class="titulo-card">
+        
+                                <!-- Parte que define o font-size de 20px-->
+                                <p class="nome mt-2 conexoes-postagens"> {{nomeCompleto}} </p>
+                                <!-- Parte do cargo -->
+                                <p class="conexoes-postagens"> {{cargo}} </p>
+                                <!-- Parte que define o font-size de 15px-->
+                            
+                            </div>
+        
+                            <p class="conexoes-postagens"> {{contaConexoes}} Conexões</p>
+                        
+                        <p class="conexoes-postagens"> {{contaPostagem}} Postagens </p>
+                        <!-- Parte que exibe data de entrada -->
+                        <p> Ingressou em Março de 2021 </p>
+                
+                    </div>
+                    <!-- Botão editar para modificar o perfil do usuário -->
+
+                    <button class="btn botaoEditar mt-3" routerLink='/perfil'>Meu Perfil</button>
+    
+                </div>
+    
+            </div> 
+            <!-- CARD DE CONEXÕES -->
+            <div class="card conexoes mt-5  " style="width: 270px;">
+    
+                <h4 class="text-center pt-3 font-weight-bold p-0">Conexões</h4> 
+                
+                <hr>
+    
+                <div class="row text-center px-3">
+                    <div class="col-md-6" *ngFor = 'let item of listaUsuario'>
+                        <a [routerLink]="['/conexao',item.id]">
+                            <img src="{{item.foto}}" alt="" class="img-fluid rounded-circle bs foto-conexao">
+                            <h6 class="fs-c mt-2"> {{item.nomeCompleto}} </h6>
+                        </a>
+                    </div>   
+                </div>
+            </div>
+                    
+            <!-- FIM CONEXÕES -->
+
+
+                       <!-- CARD DE EMPRESAS -->
+                       <div class="card conexoes mt-5  " style="width: 270px;">
+    
+                        <h4 class="text-center pt-3 font-weight-bold p-0">Empresas</h4> 
+                        
+                        <hr>
+            
+                        <div class="row text-center px-3">
+                            <div class="col-md-6">
+                                <a routerLink='/empresa-itau'>
+                                    <img src="../../assets/img/Itau.jpg" alt="Logotipo Banco Itaú" class="img-fluid rounded-circle bs foto-conexao">
+                                    <h6 class="fs-c mt-2"> Itaú </h6>
+                                </a>
+
+                                <a routerLink='/empresa-b2w'>
+                                    <img src="../../assets/img/B2w.jpg" alt="Logotipo B2W" class="img-fluid rounded-circle bs foto-conexao">
+                                    <h6 class="fs-c mt-2"> B2W </h6>
+                                </a>
+
+                                <a routerLink='/empresa-magalu'>
+                                    <img src="../../assets/img/Magalu.jpg" alt="Logotipo Magalu" class="img-fluid rounded-circle bs foto-conexao">
+                                    <h6 class="fs-c mt-2"> Magalu </h6>
+                                </a>
+                            </div> 
+                            <div class="col-md-6">
+                                <a routerLink='/empresa-mercadolivre'>
+                                    <img src="../../assets/img/Mercado Livre.jpg" alt="Logotipo Mercado Livre" class="img-fluid rounded-circle bs foto-conexao">
+                                    <h6 class="fs-c mt-2"> Mercado Livre </h6>
+                                </a>
+
+                                <a routerLink='/empresa-conductor'>
+                                    <img src="../../assets/img/Conductor.png" alt="Logotipo Conductor" class="img-fluid rounded-circle bs foto-conexao">
+                                    <h6 class="fs-c mt-2"> Conductor </h6>
+                                </a>
+
+                                <a routerLink='/empresa-mc1'>
+                                    <img src="../../assets/img/Mc1.png" alt="Logotipo MC1" class="img-fluid rounded-circle bs foto-conexao">
+                                    <h6 class="fs-c mt-2"> MC1 </h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <!-- FIM EMPRESAS -->
+                
+    <!-- FIM PERFIL -->
+        </section>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- RODAPÉ -->
+<div id="footer" class="row text-center mt-5">
+    <div class="col-md-12">
+      <a href="#" class="mr-5 font-foot">Política de privacidade do rede social ADA</a>
+      <a href="#" class="mr-5 font-foot">Sobre</a>
+      <a href="#" class="mr-5 font-foot">Política de direitos autorais</a>
+      <a href="#" class="font-foot">Direitos de marca</a>
+    </div>
+</div>
+<div class="bg-purple row">
+    <div class="col-md-12">
+      <p class=" text-white footer text-center m-0 pt-3">ADA 2021 &copy;</p>
+
+    </div>
+</div>
+    
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade " id="Temas" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo"
+    aria-hidden="true">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content modalTema">
+            <div class="modal-header">
+                <h5 class="modal-title Montserrat" id="TituloModalLongoExemplo">Escolher Tema</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <label class="roboto" for="tipoTema" style="font-weight: 600;">Escolha o tipo do tema:</label>
+                <select class="form-control roboto" name="tipoTema" id="tipoTema" (click)="tipoTheme($event)">
+                    <option selected disabled>Selecione um tipo de tema</option> 
+                    <option value="Tema Livre">Tema Livre</option>
+                    <option value="Vaga">Vaga</option>
+                    <option value="Dúvida">Dúvida</option>
+                </select>
+
+                <hr id="hr-perfil">
+
+                <div class="row d-flex align-items-end">
+                    
+                    <div class="col-md-8">
+                        <label class="roboto" for="cadastroTema" style="font-weight: 600;">Cadastre um novo tema:</label>
+                        <input [(ngModel)]='tema.descricaoTema' class="form-control" type="text" id="cadastroTema">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn botaoPostar" (click)='cadastrar()'>Cadastrar</button>
+                    </div>
+                    
+                </div>
+
+                <table class="table table-hover mt-3">
+                    <thead>
+                      <tr>
+                        <th *ngIf='auth.adm()' class="Montserrat" scope="col">Id</th>
+                        <th class="Montserrat" scope="col">Tema</th>
+                        <th class="text-right Montserrat" scope="col">Modificar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor='let item of listaTemaModal'>
+                        <th *ngIf='auth.adm()' scope="row" >{{item.id}}</th>
+                        <td class="roboto">{{item.descricaoTema}}</td>
+                        <td class="d-flex justify-content-end">
+                            <button *ngIf='auth.adm()' class="btn deletarTema" id="{{item.id}}" (click)='deleteTemaById(item.id)'>Deletar</button>
+                            <button class="btn botaoTema ml-1" id="{{item.id}}" (click)='selecionar($event)' data-dismiss="modal">Selecionar</button>
+                        </td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn botaoPostar" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->

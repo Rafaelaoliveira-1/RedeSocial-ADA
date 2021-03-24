@@ -1,0 +1,53 @@
+<div class="container-fluid">
+
+    <div class="row d-flex align-items-center">
+
+        <div class="col-md-6">
+            
+            <div class="row d-flex justify-content-center">
+                
+                <div class="col-md-6">
+
+                    <div class="d-flex justify-content-center mb-4"> 
+                    
+                    <img style="width: 60%" class="d-flex justify-content-center" src="../../assets/img/logo-cortado-roxo.jpg" alt="Logo Ada" />
+                    <!--Logotipo Ada Branco-->
+
+                    </div>
+
+                    <div class="form-group">
+                    <label for="usuario">Email</label>
+                    <input [(ngModel)]='userLogin.usuario' class="form-control" type="email" name="usuario" id="usuario" placeholder="exemplo@exemplo"/>
+                    </div>
+
+                    <div class="form-group mt-4">
+                    <label for="senha">Senha</label>
+                    <input 
+                        [(ngModel)]='userLogin.senha'
+                        class="form-control"
+                        type="password"
+                        name="senha"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                    />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                    <button id="botaoEnter" type="submit" class="btn mt-3" (click)='entrar()'>Entrar</button>
+                    </div>
+        
+                    <hr class="mt-4 mb-3">
+        
+                    <p class="text-center">
+                        Não é cadastrado? <a routerLink='/cadastrar'>Registre-se</a>
+                    </p>
+        
+                </div>
+            </div>
+
+        </div>
+
+        <div id="img-bg" class="col-md-6"></div>
+    
+    </div>
+
+</div>

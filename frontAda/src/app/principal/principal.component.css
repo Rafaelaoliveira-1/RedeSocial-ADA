@@ -1,0 +1,352 @@
+.back {
+  background-color: #89458f;
+}
+
+#divBusca {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  margin-right: 70px;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+}
+#divBusca input{
+  font-size: 0.9rem;
+}
+
+#btnBusca {
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+}
+
+.txt {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.tema-postagem {
+  padding: 0px;
+  margin-top: 0px;
+}
+.card-body {
+  padding-top: 5px;
+}
+#hr-perfil {
+  margin: 0px !important;
+}
+textarea {
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  border-radius: 15px;
+  color: black;
+}
+.sticky {
+  position: sticky;
+  top: 80px;
+}
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.dropdown-item{
+  padding-left: 0;
+}
+#principal{
+  margin-right: 1;
+}
+
+.botaoTema {
+  background-color: #ffb81c;
+  font-weight: 700;
+  border-radius: 15px;
+  font-family: "'Mont'serrat", sans-serif;
+  letter-spacing: 1px;
+}
+.botaoTema:hover {
+  background: #e79e00f6;
+  color: black;
+}
+
+.botaoPostar,
+.botaoEditar {
+  background-color: #89458f;
+  color: white;
+  font-weight: 500;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+.btn {
+  font-size: 14px;
+}
+
+button:hover {
+  background: #75277c;
+  color: white;
+}
+
+#btnEscolherTema:hover {
+  background: #e79e00f6;
+  color: black;
+}
+
+.foto-publi {
+  width: 90px;
+  height: 90px;
+}
+
+.botaoApagar {
+  background-color: rgb(250, 56, 56);
+  color: white;
+  font-weight: 500;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+#container {
+  margin-top: 2rem;
+}
+/* Perfil */
+.bg-roxo {
+  background-color: #cd9ccc;
+}
+.bg-purple{
+  background-color: #89458f;
+}
+
+.perfil-fundo {
+  background-color: #89458f;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.perfil-texto {
+  font-size: 15px;
+  border-radius: 2rem;
+  border-radius: 0rem 0rem 2rem 2rem;
+  line-height: 13px;
+
+  /* Vini hint*/
+}
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+}
+
+.nome {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3rem;
+}
+
+.conexoes-postagens {
+  text-align: center;
+}
+
+.titulo-card {
+  padding: 8px;
+}
+.foto-conexao {
+  width: 70px;
+  height: 70px;
+}
+/* Fim Perfil */
+
+/* Conexões */
+
+.conexoes {
+  border-radius: 2rem;
+  background-color: #cd9ccc;
+  box-shadow: #acacac 4px 4px 8px;
+}
+.conexoes a {
+  text-decoration: none;
+  color: #000000;
+}
+.conexoes a img:hover {
+  transform: scale(1.1);
+}
+.conexoes a img:hover {
+  transition: all 0.3s ease-out;
+}
+
+.fs-c {
+  font-size: 13px;
+}
+/* Fim Conexão*/
+
+/* Sombreamento */
+.sh {
+  box-shadow: #acacac 4px 4px 8px;
+}
+
+.bs {
+  box-shadow: #000000 2px 2px 5px;
+}
+
+.modalTema {
+  border-radius: 15px;
+}
+
+.footer {
+  background-color: #89458f;
+  height: 55px;
+}
+
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-back {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: #acacac 4px 4px 8px;
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.card-text {
+  font-family: "Roboto", sans-serif;
+}
+
+.txt-noticia {
+  font-size: 14px;
+}
+
+.footer {
+  font-size: 18px;
+}
+
+#footer a {
+  font-family: "Montserrat", sans-serif;
+  color: #89458f;
+  font-weight: bold;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: #3a0d3d;
+}
+
+.opac {
+  opacity: 1;
+}
+
+.deletarTema {
+  background: rgb(233, 40, 40);
+  color: white;
+  font-weight: 700;
+  border-radius: 15px;
+  font-family: "'Mont'serrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+.deletarTema:hover {
+  background: rgb(204, 33, 33);
+}
+@media (min-width: 768px) and (max-width:991.98px){
+    /* Noticias */
+    #noticias {
+      display: none;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .sticky{
+      position: sticky;
+      top:100px;
+    }
+    #content{
+      display: flex;
+      justify-content: center ;
+    }
+}
+
+@media (max-width: 767px) {
+  /* Layout pagina principal */
+  #container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  /* Barra de navegação */
+  #divBusca{
+    width: 300px !important;
+  }
+  #pesquisa{
+    width: 200pt !important;
+  }
+  /* Card perfil */
+  #perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  #cards,
+  #container {
+    margin-top: 1rem;
+  }
+
+  .perfil-texto {
+    width: 93vw !important;
+  }
+  .perfil-fundo {
+    width: 93vw !important;
+  }
+
+  .foto-perfil {
+    width: 150px;
+  }
+  .conexoes-postagens {
+    margin-right: 50px;
+  }
+
+  /* Noticias */
+  #noticias {
+    display: none;
+  }
+
+  /* Conexões */
+
+  .conexoes {
+    display: none;
+  }
+}

@@ -1,0 +1,159 @@
+.back {
+  background-color: #89458f;
+}
+
+#divBusca {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+}
+
+#btnBusca {
+  display: flex;
+  align-items: flex-end;
+}
+
+li {
+  list-style: none;
+}
+
+.perfil-fundo {
+  background-color: #89458f;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.perfil-texto {
+  background-color: #cd9ccc;
+  font-size: 15px;
+  border-radius: 2rem;
+  border-radius: 0rem 0rem 2rem 2rem;
+  line-height: 13px;
+  /* Vini hint*/
+}
+.foto-perfil {
+  width: 90px;
+  height: 90px;
+}
+.bs {
+  box-shadow: #000000 2px 2px 5px;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  border-radius: 15px;
+  color: black;
+  width: 100%;
+}
+
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-foot {
+  font-family: "Montserrat", sans-serif;
+  color: #89458f;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #89458f;
+  height: 55px;
+}
+
+.card-back {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: #acacac 4px 4px 8px;
+}
+
+.card-back-del {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: #acacac 2px 2px 5px;
+}
+
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+#botaoCancelar {
+  background: #ffb81c;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+#excluirPostagem {
+  background: rgb(233, 40, 40);
+  color: white;
+  font-weight: 500;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+#excluirPostagem:hover {
+  background: rgb(204, 33, 33);
+}
+.modalTema{
+  border-radius: 15px;
+}
+
+#botaoEnter {
+  color: white;
+}
+.dropdown-item{
+  padding-left: 0;
+}
+
+#botaoCancelar:hover {
+  background: #e79e00f6;
+  color: black;
+}
+
+.botaoPostar,
+.botaoEditar {
+  background-color: #89458f;
+  color: white;
+  font-weight: 500;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+.botaoEditar:hover,
+.botaoPostar:hover {
+  background-color: #75277c;
+}
+
+.footer {
+  font-size: 18px;
+}
+
+#footer a {
+  font-family: "Montserrat", sans-serif;
+  color: #89458f;
+  font-weight: bold;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: #3a0d3d;
+}

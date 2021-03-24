@@ -1,0 +1,263 @@
+.back {
+    background-color: #89458f;
+  }
+  
+  #divBusca {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    margin-right: 70px;
+  }
+  
+  #txtBusca {
+    float: left;
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 260px;
+  }
+  #divBusca input{
+    font-size: 0.9rem;
+  }
+  
+  #btnBusca {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  input {
+    font-family: "Roboto", sans-serif;
+  }
+  .dropdown-item{
+    padding-left: 0;
+  }
+  
+  /* Conexões */
+  .conexoes {
+    border-radius: 2rem;
+    background-color: #cd9ccc;
+    box-shadow: #acacac 4px 4px 8px;
+  }
+  
+  .fs-c {
+    font-size: 13px;
+  }
+  
+  /* Fim Conexão*/
+  
+  /* Sombreamento */
+  .sh {
+    box-shadow: #acacac 4px 4px 8px;
+  }
+  
+  .bs {
+    box-shadow: #000000 2px 2px 5px;
+  }
+  
+  .modalTema {
+    border-radius: 15px;
+  }
+  
+  .footer {
+    background-color: #89458f;
+    height: 55px;
+  }
+  
+  .mont {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .card-back {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: #acacac 4px 4px 8px;
+  }
+  #postagem .card-body {
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .foto-perfil {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .insti {
+    font-family: "Old Standard TT", serif;
+  }
+  
+  .card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* BOTAO EDITAR */
+  .botaoEditar,
+  .botaoPostar {
+    background-color: #89458f;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+  }
+  .botaoEditar:hover,
+  .botaoPostar:hover {
+    background-color: #75277c;
+  }
+  
+  /* BOTAO DELETAR */
+  
+  .botaoDeletar,
+  .botaoEditarPerfil {
+    background-color: #ffb81c;
+    font-weight: 700;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+  }
+  .botaoEditarPerfil:hover {
+    background: #e79e00f6;
+  }
+  
+  button:hover {
+    background: #75277c;
+    color: white;
+  }
+  
+  #btnEditarPerfil:hover {
+    background: #e79e00f6;
+    color: black;
+  }
+  
+  /* ================================================================== */
+  
+  .perfil-fundo {
+    border-radius: 2rem;
+  }
+  
+  .img {
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+  }
+  
+  .pb {
+    padding-left: 100px;
+  }
+  
+  .fundo-cima {
+    background-color: #89458f;
+    border-radius: 2rem 2rem 0rem 0rem;
+  }
+  
+  .fundo-baixo {
+    background-color: #cd9ccc;
+    border-radius: 0rem 0rem 2rem 2rem;
+  }
+  
+  .fp {
+    color: white;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .fontNomeCargo {
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
+  .conexao-foto {
+    width: 70px;
+    height: 70px;
+  }
+  .conexoes-postagens {
+    text-align: left;
+    padding-left: 35px;
+  }
+  
+  .titulo-card {
+    padding: 8px;
+  }
+  .foto-conexao {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .conexoes {
+    border-radius: 2rem;
+    background-color: #cd9ccc;
+    box-shadow: #acacac 4px 4px 8px;
+  }
+  .conexoes a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .conexoes a img:hover {
+    transform: scale(1.1);
+  }
+  .conexoes a img:hover {
+    transition: all 0.3s ease-out;
+  }
+  
+  .fs-c {
+    font-size: 13px;
+  }
+  /* Fim Conexão*/
+  .bg-roxo {
+    background-color: #89458f;
+  }
+  .footer {
+    font-size: 30px;
+  }
+  #footer a {
+    color: #89458f;
+    font-weight: bold;
+  }
+  #footer a:hover {
+    text-decoration: none;
+    color: #3a0d3d;
+  }
+  
+  .footer {
+    font-size: 18px;
+  }
+  
+  #footer a {
+    font-family: "Montserrat", sans-serif;
+    color: #89458f;
+    font-weight: bold;
+  }
+  
+  #footer a:hover {
+    text-decoration: none;
+    color: #3a0d3d;
+  }
+  @media(max-width:1199.98px){
+    #empresas{
+      display: none;
+    }
+    #content{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media(max-width:767.98px){
+    #card-perfil{
+      display: flex;
+      justify-content: center;
+    }
+    #card-perfil h1,
+    #card-perfil h4{
+      text-align: center;
+    }
+  }

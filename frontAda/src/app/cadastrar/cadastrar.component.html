@@ -1,0 +1,125 @@
+<div class="container-fluid">
+  <!--Inicio-->
+  <div class="row">
+    <div class="col-md-6 mt-5 mb-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+          <div class="d-flex justify-content-center mb-4">
+            <img
+              style="width: 35%"
+              class="d-flex justify-content-center"
+              src="../../assets/img/logo-cortado-roxo.jpg"
+              alt="Logo Ada"
+            />
+            <!--Logotipo Ada Branco-->
+          </div>
+
+          <div class="form-group">
+            <label for="nome"> Nome completo </label>
+            <input
+              [(ngModel)]="usuario.nomeCompleto"
+              (input) ='validarNome($event)'
+              class="form-control"
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite o seu nome"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="usuario"> E-mail </label>
+            <input
+              [(ngModel)]="usuario.usuario"
+              class="form-control"
+              type="email"
+              name="usuario"
+              id="usuario"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="senha"> Senha </label>
+            <input
+              (input)="confirmaSenha($event)"
+              class="form-control"
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmaSenha"> Confirme sua senha </label>
+            <input
+              [(ngModel)]="usuario.senha"
+              class="form-control"
+              type="password"
+              name="confirmaSenha"
+              id="confirmaSenha"
+              placeholder="Confirme sua senha"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="cargo"> Cargo </label>
+            <input
+              [(ngModel)]="usuario.cargo"
+              class="form-control"
+              type="text"
+              name="cargo"
+              id="cargo"
+              placeholder="Digite o seu cargo"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="foto"> Link da sua Foto </label>
+            <input
+              [(ngModel)]="usuario.foto"
+              class="form-control"
+              type="url"
+              name="foto"
+              id="foto"
+              placeholder="Link de sua foto de perfil"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="link"> Link Github </label>
+            <input
+              [(ngModel)]="usuario.link"
+              class="form-control"
+              type="url"
+              name="link"
+              id="link"
+              placeholder="Link do seu GitHub"
+            />
+          </div>
+
+          <div class="d-flex justify-content-center mt-4">
+            <button
+              id="botaoCancelar"
+              type="submit"
+              class="btn"
+              routerLink="/entrar"
+            >
+              Cancelar
+            </button>
+            <button
+              id="botaoCadastrar"
+              type="submit"
+              class="btn ml-5"
+              (click)="cadastrar()"
+            >
+              Cadastrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6" id="img-bg"></div>
+  </div>
+</div>

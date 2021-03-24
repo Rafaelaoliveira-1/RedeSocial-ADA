@@ -1,0 +1,227 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+span {
+  display: block;
+}
+.logo {
+  width: 40%;
+}
+a {
+  color: #89458f;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+  color: #3a0d3d;
+}
+
+.conhecaMais {
+  color: white;
+  font-weight: bold;
+}
+
+.conhecaMais:hover {
+  color: #f2c7f5;
+  font-weight: bold;
+}
+
+.acessoLinkedin {
+  color: #211122;
+  font-weight: bold;
+}
+
+.acessoLinkedin:hover {
+  text-decoration: none;
+  color: #3e0f42;
+}
+
+.teste:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease-out;
+}
+
+.btn-lg {
+  background-color: #89458f;
+  border-color: #89458f;
+  color: white;
+  padding: 10px 80px;
+  font-weight: bold;
+}
+
+.btn-lg:hover {
+  background: #ffb81c;
+  border-color: #ffb81c;
+  color: black;
+  font-weight: bold;
+}
+.titulo-roxo {
+  color: #89458f;
+  font-size: 50px;
+}
+
+.quemSomos-font {
+  font-size: 20px;
+}
+.titulo-cinza {
+  color: #675a68;
+}
+.card {
+  border: none;
+}
+.card-body {
+  background-color: #89458f;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+#desenvolvedores .card {
+  overflow: hidden;
+}
+#desenvolvedores .card img {
+  width: 100%;
+  border-radius: 2px;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#desenvolvedores .card:hover img {
+  transform: scale(1.3);
+}
+.texto {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  background-color: rgba(137, 69, 143, 0.8);
+  border-radius: 10px;
+}
+.texto:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#parceiros a{
+  display: block;
+}
+#desenvolvedores{
+  border-bottom:1px solid #e9cfe9c9;
+  padding-bottom: 40px;
+
+}
+#desenvolvedores .card img {
+  width: 270px;
+  height: 270px;
+  border-radius: 20px;
+}
+#desenvolvedores a {
+  display: block;
+}
+.card-text {
+  font-size: 14px;
+}
+.logo-facebook {
+  width: 60px;
+}
+.logo-instagram {
+  width: 70px;
+}
+.logo-linkedin {
+  width: 63px;
+}
+.logo-facebook:hover,
+.logo-instagram:hover,
+.logo-linkedin:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-out;
+}
+
+h3 {
+  color: #89458f;
+  font-size: 25px;
+}
+.btn-enviar {
+  background-color: #89458f;
+  border-color: #89458f;
+  color: white;
+  padding: 10px 40px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+.btn-enviar:hover {
+  background: #ffb81c;
+  border-color: #ffb81c;
+  color: black;
+  padding: 10px 40px;
+  font-weight: bold;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+input,
+textarea {
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+button,
+input,
+textarea {
+  box-shadow: 2px 2px 3px #cfcfcf;
+}
+.bg-roxo {
+  background-color: #89458f;
+}
+
+.footer {
+  font-size: 15px;
+}
+
+.font-foot {
+  font-family: "Montserrat", sans-serif;
+  color: #89458f;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  /* Importância da rede */
+  #importancia-da-rede img {
+    width: 120%;
+  }
+
+  /* Desenvolvedores */
+  #desenvolvedores .card {
+    width: 180px;
+    height: 180px;
+  }
+  #desenvolvedores .card img {
+    width: 180px;
+    height: 180px;
+  }
+  #desenvolvedores .texto h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  #desenvolvedores .texto p {
+    font-size: 0.6rem;
+  }
+
+  /* Fale Conosco */
+  .fale-conosco {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fale-conosco h3 {
+    margin-bottom: 10px;
+  }
+  .fale-conosco input,
+  .fale-conosco textarea {
+    text-align: center;
+  }
+  .fale-conosco button {
+    align-self: center;
+    width: 50%;
+  }
+}

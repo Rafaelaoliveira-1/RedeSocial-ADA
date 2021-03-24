@@ -1,0 +1,58 @@
+#img-bg {
+  background: url("../../assets/img/img.mulheresJuntasFINAL2.0.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: #29152b 1px solid;
+}
+
+button {
+  background: #89458f;
+  font-size: 12pt;
+  border-radius: 10px;
+  width: 100pt;
+  box-shadow: #d6d2c4 5px 5px 7px;
+  color: white;
+  font-weight: 500;
+}
+
+#botaoCancelar {
+  background: #ffb81c;
+  color: #000000;
+}
+
+#botaoEnter {
+  color: white;
+}
+
+button:hover {
+  background: #75277c;
+  color: white;
+}
+
+#botaoCancelar:hover {
+  background: #e79e00f6;
+  color: black;
+}
+
+input,
+select {
+  border-radius: 10px;
+  background: #e5e5e5;
+  box-shadow: #d6d2c4 5px 5px 7px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
+}
+@media (max-width: 767px) {
+  /* Imagem de background*/
+
+  #img-bg {
+    display: none;
+  }
+}
